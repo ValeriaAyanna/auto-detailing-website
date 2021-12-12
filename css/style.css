@@ -11,10 +11,8 @@
     box-sizing: border-box;
 }
 
-@media only mobile {
-    header {
-        background-color: var(--black);
-        color: var(--off-white);
-        height: 5vh;
-    }
+header {
+    background-color: var(--black);
+    color: var(--off-white);
+    height: 5vh;
 }
