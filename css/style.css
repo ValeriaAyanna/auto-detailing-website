@@ -1,0 +1,19 @@
+:root {
+    --red: #950014;
+    --off-white: #fbf7f8;
+    --black: #090001;
+}
+
+
+/*-----RESPONSIVE GRID------*/
+
+* {
+    box-sizing: border-box;
+}
+
+@media only mobile {
+    header {
+        background-color: var(--black);
+        color: var(--off-white);
+    }
+}
