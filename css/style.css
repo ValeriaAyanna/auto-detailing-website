@@ -13,6 +13,9 @@
 
 header {
     background-color: var(--black);
-    color: var(--off-white);
     height: 5vh;
+}
+
+.header-text {
+    color: var(--off-white);
 }
