@@ -15,5 +15,6 @@
     header {
         background-color: var(--black);
         color: var(--off-white);
+        height: 5vh;
     }
 }
