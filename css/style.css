@@ -1,7 +1,7 @@
 :root {
     --red: #950014;
     --off-white: #fbf7f8;
-    --black: #090001;
+    --black: #000000;
 }
 
 
@@ -11,11 +11,122 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 5rem;
+    background-color: var(--off-white);
+}
+
 header {
     background-color: var(--black);
-    height: 5vh;
+    width: 100%;
+    height: 10vh;
+    margin: 0;
+    top: 0;
+    grid-column-start: 0;
+    grid-column-end: 100%;
+    grid-row-start: 0;
+    grid-row-end: 25%;
+    border-bottom: solid 3px var(--red);
+}
+
+.header-text-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100%, auto);
 }
 
 .header-text {
     color: var(--off-white);
+    font-size: 0.6em;
+    text-align: center;
+}
+
+.landing {
+    background-color: var(--off-white);
+    height: 100vh;
+}
+
+.interior-landing-pic {
+    width: 100%;
+}
+
+.landing-text {
+    text-align: center;
+    color: var(--black);
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.landing-button-container {
+    margin-left: 20%;
+    margin-right: 20%;
+    align-content: center;
+}
+
+.landing-button {
+    background-color: var(--red);
+    color: var(--off-white);
+    text-decoration: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.big-three {
+    background-color: var(--off-white);
+    height: 100vh;
+    margin-top: 0;
+}
+
+.three-boxes-grid {
+    grid-column-start: 0;
+    grid-column-end: 100%;
+    grid-row-start: 0;
+    grid-row-end: 25%;
+}
+
+.three-boxes-container {
+    /*display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(100%, auto);*/
+    background-color: var(--off-white);
+    border: solid 2px var(--red);
+    height: 30vh;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    box-shadow: 10px 10px 35px var(--black);
+}
+
+.three-boxes {
+    border: solid 2px black;
+    display: inline-block;
+}
+
+.three-boxes-headline {
+    background-color: var(--red);
+    color: var(--off-white);
+    text-align: center;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    /*height: 3em;*/
+    margin-top: 0;
+}
+
+.three-boxes-description {
+    width: 100%;
+    padding-left: 2em;
+    padding-right: 2em;
+    height: 2em;
+    text-align: center;
 }
