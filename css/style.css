@@ -16,6 +16,15 @@
     box-sizing: border-box;
 }
 
+
+/*html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}*/
+
 body {
     overflow-y: auto;
     margin-left: 0;
@@ -28,6 +37,8 @@ body {
     grid-row-start: 0;
     grid-row-end: 25%;
     height: 100%;
+    width: auto;
+    /* overflow-x: hidden; */
 }
 
 
@@ -49,13 +60,28 @@ header {
 .header-text-box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: minmax(100%, auto);
+    grid-auto-rows: minmax(100%, 10vh);
 }
 
 .header-text {
     color: var(--off-white);
     font-size: 0.6em;
     text-align: center;
+}
+
+.secret-things {
+    color: var(--black);
+}
+
+.header-logo {
+    width: inherit;
+    object-fit: cover;
+    max-width: fit-content;
+    margin: auto;
+    max-height: 10vh;
+    z-index: 7;
+    top: 0;
+    position: sticky;
 }
 
 .nav-arrow-div {
@@ -109,7 +135,7 @@ header {
     position: relative;
     background-color: var(--black);
     color: var(--off-white);
-    width: relative;
+    width: inherit;
     margin-top: 10vh;
     z-index: 3;
 }
@@ -711,7 +737,7 @@ footer {
     position: static;
     color: var(--off-white);
     float: bottom;
-    padding-top: 3rem;
+    padding-top: 2rem;
     padding-bottom: 3rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -719,7 +745,7 @@ footer {
 
 .socials {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: minmax(min-content, auto);
     padding: 0;
     margin-top: 0;
@@ -730,6 +756,8 @@ footer {
     border-right: none;
     border-bottom: solid 1px var(--off-white);
     margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
 }
 
 .social-link {
@@ -738,13 +766,14 @@ footer {
     margin: 0;
     text-decoration: none;
     color: var(--off-white);
+    text-align: center;
 }
 
 .social-link>h4 {
     padding: 0;
     margin-bottom: 1rem;
     margin-top: 0;
-    margin-left: 1rem;
+    margin-left: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: normal;
@@ -784,7 +813,7 @@ footer {
 }
 
 .map-contents>h4 {
-    text-align: left;
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: normal;
@@ -806,6 +835,7 @@ footer {
     font-size: 1rem;
     font-weight: normal;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .footer-info {
@@ -840,6 +870,7 @@ footer {
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     margin-top: 2rem;
+    text-align: center;
 }
 
 .footer-credits>p {
