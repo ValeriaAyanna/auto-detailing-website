@@ -589,7 +589,7 @@ header {
 /*Contact*/
 
 .contact {
-    background-image: url("../img/red-leather-background.jpg");
+    background-image: url("../img/new-subtle-white-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 2rem;
@@ -599,21 +599,21 @@ header {
 
 .contact-title {
     margin-bottom: 3rem;
-    color: var(--off-white);
+    color: var(--black);
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     font-weight: normal;
     text-transform: uppercase;
     padding-top: 2rem;
-    border-bottom: solid 1px var(--off-white);
+    border-bottom: solid 1px var(--black);
     margin-left: 4rem;
     margin-right: 4rem;
     margin-top: 0;
 }
 
 .contact-form {
-    background: var(--black);
+    background: transparent;
     margin-left: 2rem;
     margin-right: 2rem;
     padding: 1rem;
@@ -621,7 +621,83 @@ header {
     font-size: 1rem;
     font-weight: normal;
     text-transform: uppercase;
-    color: var(--other-white);
+    color: var(--black);
+}
+
+form .field>input {
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 1.5px var(--black);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+form .field>input:active {
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 1.5px var(--red);
+    outline: none;
+}
+
+select {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--black);
+    background-color: var(--off-white);
+}
+
+select>option:hover {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--off-white);
+    background-color: var(--red);
+}
+
+.required:before {
+    content: " *";
+    color: var(--red);
+}
+
+textarea {
+    height: 5rem;
+    resize: vertical;
+    max-height: 9rem;
+    width: 100%;
+    background-color: var(--off-white);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+textarea:focus,
+select:focus {
+    outline: solid 2px var(--red);
+}
+
+input:focus,
+input:after {
+    outline: none;
+    border-bottom: solid 3px var(--red);
+}
+
+.contact-button-style {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 2px var(--red);
+    background: transparent;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--black);
 }
 
 

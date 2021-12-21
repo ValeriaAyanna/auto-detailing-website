@@ -42,19 +42,19 @@
         <h4 class="contact-title">Contact</h4>
         <form name="contact" method="POST" data-netlify="true" class="contact-form">
             <p>
-                <label class="contact-fn field">Name: <input type="text" name="name" placeholder="John Doe"/></label>
+                <label class="contact-fn field required">Name: <input type="text" name="name" placeholder="John Doe"/></label>
             </p>
             <p>
-                <label class="contact-email field">Email: <input type="email" name="email" placeholder="name@example.com"/></label>
+                <label class="contact-email field required">Email: <input type="email" name="email" placeholder="name@example.com"/></label>
             </p>
             <p>
-                <label class="contact-fn field">Vehicle Make: <input type="text" name="name" placeholder="Honda"/></label>
+                <label class="contact-fn field required">Vehicle Make: <input type="text" name="name" placeholder="Honda"/></label>
             </p>
             <p>
-                <label class="contact-fn field">Vehicle Model: <input type="text" name="name" placeholder="Civic" /></label>
+                <label class="contact-fn field required">Vehicle Model: <input type="text" name="name" placeholder="Civic" /></label>
             </p>
             <p>
-                <label class="contact-condition-select">Interior Condition: <select name="role[]" multiple>
+                <label class="contact-condition-select required">Interior Condition: <select name="role[]">
                 <option value="condition">1 - Very Dirty</option>
                 <option value="condition">2 -  Somewhat Dirty</option>
                 <option value="condition">3 -  Neutral</option>
@@ -63,7 +63,7 @@
               </select></label>
             </p>
             <p>
-                <label class="contact-service-select">Select Service: <select name="role[]" multiple>
+                <label class="contact-service-select required">Select Service: <select name="role[]">
                 <option value="basic">Basic Quick Clean</option>
                 <option value="intermediate">Intermediate Detail</option>
                 <option value="premium">Premium Detail</option>
@@ -71,10 +71,10 @@
               </select></label>
             </p>
             <p>
-                <label>Add Details: <textarea name="message"></textarea></label>
+                <label>Add Details: <textarea name="message" maxlength="650"></textarea></label>
             </p>
             <p>
-                <button type="submit">Send</button>
+                <button type="submit" class="contact-button-style">Send</button>
             </p>
         </form>
     </section>
@@ -83,15 +83,96 @@
 </body>
 <!--Footer-->
 <footer>
-    <section>
-        <!--Hours-->
-        <h5>Hours:</h5>
+    <!--Top bar-->
+    <div class="socials">
+        <a href="#" class="social-link">
+            <img src="">
+            <h4>Facebook</h4>
+        </a>
+        <a href="#" class="social-link">
+            <img src="">
+            <h4>Instagram</h4>
+        </a>
+        <a href="#" class="social-link">
+            <img src="">
+            <h4>Reviews</h4>
+        </a>
+    </div>
 
-    </section>
-    <section>
-        <!--Social Media-->
+    <!--Mid 3 columns-->
+    <div class="map">
+        <div class="map-contents">
+            <h4>Site Map</h4>
+            <ul>
+                <li>
+                    <a href="../auto-detailing-website/index.html" class="footer-map">
+                        <h5>Home</h5>
+                    </a>
+                </li>
 
-    </section>
+                <li>
+                    <a href="../auto-detailing-website/services.html" class="footer-map">
+                        <h5>Services</h5>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../auto-detailing-website/gallery.html" class="footer-map">
+                        <h5>Gallery</h5>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../auto-detailing-website/contact.html" class="footer-map">
+                        <h5>Contact</h5>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+
+        <div class="footer-hours">
+            <h4>Hours</h4>
+            <ul>
+                <li>
+                    <h4>Sunday: 10:00 AM - 6:00 PM</h4>
+                </li>
+                <li>
+                    <h4>Monday: 10:00 AM - 6:00 PM</h4>
+                </li>
+                <li>
+                    <h4>Tuesday: 10:00 AM - 6:00 PM</h4>
+                </li>
+                <li>
+                    <h4>Wednesday: 10:00 AM - 6:00 PM</h4>
+                </li>
+                <li>
+                    <h4>Thursday: 10:00 AM - 6:00 PM</h4>
+                </li>
+                <li>
+                    <h4>Friday: 10:00 AM - 6:00 PM</h4>
+                </li>
+                <li>
+                    <h4>Saturday: 10:00 AM - 6:00 PM</h4>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Credits and Copyright-->
+    <div class="footer-credits">
+        <p>Developed by Vedev Solutions</p>
+        <p>Copyright 2021</p>
+        <a href="https://www.freepik.com/vectors/background">Background vector created by rawpixel.com - www.freepik.com</a>
+        <a href="#" class="footer-info">
+            <h5>Privacy Policy</h5>
+        </a>
+    </div>
+
+
+
+
 </footer>
 
 </html>
