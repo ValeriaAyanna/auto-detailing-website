@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+    </style>
+    <script src="./js/scripts.js"></script>
+    <link href="./css/style.css" rel="stylesheet" type="text/css" media="screen">
+    <title>Edwards Detailing Services: Bespoke Interior Detailing</title>
+</head>
+
+
+
+<body>
+    <header>
+
+        <div class="header-text-box">
+            <p></p>
+            <!--Hours-->
+            <p class="header-text">logo</p>
+            <!--Phone Number-->
+            <div class="dropdown mobile-navbutton">
+                <button onclick="clickFunction()" class="nav-arrow-div"><img src="img/down-arrow-icon-light.png"></button>
+                <div id="dropdown-menu" class="dropdown-content">
+                    <a href="../auto-detailing-website/index.html" class="nav-link">Home</a>
+                    <a href="../auto-detailing-website/services.html" class="nav-link">Services</a>
+                    <a href="../auto-detailing-website/gallery.html" class="nav-link">Gallery</a>
+                    <a href="../auto-detailing-website/contact.html" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!--Contact-->
+    <section class="contact">
+        <h4 class="contact-title">Contact</h4>
+        <form name="contact" method="POST" data-netlify="true" class="contact-form">
+            <p>
+                <label class="contact-fn field">Name: <input type="text" name="name" placeholder="John Doe"/></label>
+            </p>
+            <p>
+                <label class="contact-email field">Email: <input type="email" name="email" placeholder="name@example.com"/></label>
+            </p>
+            <p>
+                <label class="contact-fn field">Vehicle Make: <input type="text" name="name" placeholder="Honda"/></label>
+            </p>
+            <p>
+                <label class="contact-fn field">Vehicle Model: <input type="text" name="name" placeholder="Civic" /></label>
+            </p>
+            <p>
+                <label class="contact-condition-select">Interior Condition: <select name="role[]" multiple>
+                <option value="condition">1 - Very Dirty</option>
+                <option value="condition">2 -  Somewhat Dirty</option>
+                <option value="condition">3 -  Neutral</option>
+                <option value="condition">4 -  Somewhat Clean</option>
+                <option value="condition">5 -  Very Clean</option>
+              </select></label>
+            </p>
+            <p>
+                <label class="contact-service-select">Select Service: <select name="role[]" multiple>
+                <option value="basic">Basic Quick Clean</option>
+                <option value="intermediate">Intermediate Detail</option>
+                <option value="premium">Premium Detail</option>
+                <option value="bespoke">Bespoke Full Car Detail</option>
+              </select></label>
+            </p>
+            <p>
+                <label>Add Details: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+                <button type="submit">Send</button>
+            </p>
+        </form>
+    </section>
+
+
+</body>
+<!--Footer-->
+<footer>
+    <section>
+        <!--Hours-->
+        <h5>Hours:</h5>
+
+    </section>
+    <section>
+        <!--Social Media-->
+
+    </section>
+</footer>
+
+</html>

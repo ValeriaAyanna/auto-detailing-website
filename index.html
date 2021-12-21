@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+    </style>
+    <script src="./js/scripts.js"></script>
     <link href="./css/style.css" rel="stylesheet" type="text/css" media="screen">
     <title>Edwards Detailing Services: Bespoke Interior Detailing</title>
 </head>
@@ -13,142 +17,186 @@
 
 <body>
     <header>
-        <div>
-            <!--Logo-->
-            <img> Stuff
-        </div>
-        <div>
-            <!--Navigation Icon-->
-
-        </div>
-        Other
 
         <div class="header-text-box">
+            <p></p>
             <!--Hours-->
-            <p class="header-text">Hours: 10 AM - 6 PM, 7 days a week</p>
+            <p class="header-text">logo</p>
             <!--Phone Number-->
-            <p class="header-text">(336) 391-3101</p>
+
+            <div class="dropdown mobile-navbutton">
+                <button onclick="clickFunction()" class="nav-arrow-div"><img src="img/down-arrow-icon-light.png"></button>
+                <div id="dropdown-menu" class="dropdown-content">
+                    <a href="../auto-detailing-website/index.html" class="nav-link">Home</a>
+                    <a href="../auto-detailing-website/services.html" class="nav-link">Services</a>
+                    <a href="../auto-detailing-website/gallery.html" class="nav-link">Gallery</a>
+                    <a href="../auto-detailing-website/contact.html" class="nav-link">Contact</a>
+                </div>
+            </div>
         </div>
     </header>
 
     <section class="landing">
         <div>
-            <img src="img/landing-image-medium.jpg" class="interior-landing-pic">
+            <!--<img src="img/abarth-sized-landing.jpg" class="interior-landing-pic">-->
+            <video controls autoplay loop muted src="vid/detailing-sizzle-reel.mp4" class="interior-landing-pic"></video>
         </div>
         <div class="landing-text">
             <h3>Edwards Detailing Services</h3>
             <h4>Bespoke Interior Detailing</h4>
+            <div class="landing-info-grid">
+                <div class="landing-box">
+                    <p>10 AM - 6 PM,<br> 7 days a week</p>
+                </div>
+                <div class="landing-box">
+                    <p>Phone:<br>(336) 391-3101</p>
+                </div>
+
+                <!--<h4 class="landing-info">10 AM - 6 PM,<br> 7 days a week</h4>
+                <h4 class="landing-info">Phone:<br>(336) 391-3101</h4>-->
+
+            </div>
         </div>
 
-        <div class="landing-button-container">
-            <button class="landing-button">Get An Estimate!</button>
+        <div>
+            <a href="../auto-detailing-website/services.html" class="landing-button-container">
+                <button class="landing-button" href="../auto-detailing-website/services.html">Pricing</button>
+                <button class="icon-div" href="../auto-detailing-website/services.html">></button>
+            </a>
+
+            <!--<div class="icon-div">
+                <p class="right-arrow-icon-other">></p>
+            </div>-->
         </div>
 
     </section>
 
     <!--Top Section-->
     <section class="big-three">
+
+        <div class="big-three-title">
+            <p>The Highest...</p>
+        </div>
         <!--Background Image Slideshow-->
         <section class="three-boxes-grid">
-            <!--Three text boxes-->
-            <!--Text-->
-            <div class="three-boxes-container">
-                <div class="three-boxes-headline">
-                    <h4>Highest Standards</h4>
 
-                </div>
-                <div class="three-boxes-description">
-                    <p>I offer only my best work to make your vehicle look good as new! Only the best products backed by the most thourough research are used to pamper your interior so that every drive is a luxurious experience.
-                    </p>
-                </div>
+            <div class="three-boxes-container-left">
+                <h4>Standards</h4>
+                <p>I offer only my best work to make your vehicle look good as new! Only the best products backed by the most thourough research are used to pamper your interior so that every drive is a luxurious experience.
+                </p>
+            </div>
 
+            <div class="three-boxes-container-right">
+                <h4>Results</h4>
+                <p>My guarantee is to deliver beautiful results that stand the test of time. The work I do will continue to protect and condition your interior long after you drive off the lot. You too will agree they speak for themselves.</p>
+            </div>
+
+            <div class="three-boxes-container-left">
+                <h4>Reputation</h4>
+                <p>I am a proud part of the Austin car community. I believe that a deep love for car culture and a wealth of knowledge in car maintenance are key in giving your vehicle the attention to detail you seek.
+                </p>
             </div>
 
 
-            <!--Text-->
-            <div class="three-boxes-container">
-                <div class="three-boxes-headline">
-                    <h4>Lasting Results</h4>
-
-                </div>
-                <div class="three-boxes-description">
-                    <p>My guarantee is to deliver beautiful results that stand the test of time. The work I do will continue to protect and condition your interior long after you drive off the lot. You too will agree they speak for themselves.</p>
-                </div>
-
-            </div>
 
 
-            <!--Text-->
-            <div class="three-boxes-container">
-                <div class="three-boxes-headline">
-                    <h4>Trustworthy Reputation</h4>
-
-                </div>
-                <div class="three-boxes-description">
-                    <p>Here at Edwards Detailing Services, I am a proud part of the Austin car community. I believe that a deep love for car culture and a wealth of knowledge in car maintenance are key in giving your vehicle the attention to detail you seek.
-                    </p>
-                </div>
-
-            </div>
-
-            <!--
-            <div class="three-boxes">
-                <div>
-                    <div class="three-boxes-headline">
-                        <h4>Lasting Results</h4>
-                    </div>
-                    <p>My consistent guarantee is to deliver beautiful results that stand the test of time. The work I do will continue to protect and condition your interior long after you drive off the lot. Once you have experienced our results, you too
-                        will agree they speak for themselves.
-                    </p>
-                </div>
-            </div>
-            <div class="three-boxes">
-                <div>
-                    <div class="three-boxes-headline">
-                        <h4>Trustworthy Reputation</h4>
-                    </div>
-                    <p></p>
-                </div>
-            </div>
-        -->
         </section>
     </section>
 
-    <!--About-->
-    <section>
+    <footer>
+        <!--Top bar-->
+        <div class="socials">
+            <a href="#" class="social-link">
+                <img src="">
+                <h4>Facebook</h4>
+            </a>
+            <a href="#" class="social-link">
+                <img src="">
+                <h4>Instagram</h4>
+            </a>
+            <a href="#" class="social-link">
+                <img src="">
+                <h4>Reviews</h4>
+            </a>
+        </div>
 
-    </section>
+        <!--Mid 3 columns-->
+        <div class="map">
+            <div class="map-contents">
+                <h4>Site Map</h4>
+                <ul>
+                    <li>
+                        <a href="#" class="footer-map">
+                            <h5>Home</h5>
+                        </a>
+                    </li>
 
-    <!--Services and Packages with Get Free Estimate-->
-    <section>
+                    <li>
+                        <a href="#" class="footer-map">
+                            <h5>Services</h5>
+                        </a>
+                    </li>
 
-    </section>
+                    <li>
+                        <a href="#" class="footer-map">
+                            <h5>Gallery</h5>
+                        </a>
+                    </li>
 
-    <!--FAQs-->
-    <section>
-        <!--Accordion Display-->
+                    <li>
+                        <a href="#" class="footer-map">
+                            <h5>Contact</h5>
+                        </a>
+                    </li>
+                </ul>
 
-    </section>
+            </div>
 
-    <!--Contact-->
-    <section>
-        <form>
 
-        </form>
-    </section>
+            <div class="footer-hours">
+                <h4>Hours</h4>
+                <ul>
+                    <li>
+                        <h4>Sunday: 10:00 AM - 6:00 PM</h4>
+                    </li>
+                    <li>
+                        <h4>Monday: 10:00 AM - 6:00 PM</h4>
+                    </li>
+                    <li>
+                        <h4>Tuesday: 10:00 AM - 6:00 PM</h4>
+                    </li>
+                    <li>
+                        <h4>Wednesday: 10:00 AM - 6:00 PM</h4>
+                    </li>
+                    <li>
+                        <h4>Thursday: 10:00 AM - 6:00 PM</h4>
+                    </li>
+                    <li>
+                        <h4>Friday: 10:00 AM - 6:00 PM</h4>
+                    </li>
+                    <li>
+                        <h4>Saturday: 10:00 AM - 6:00 PM</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-    <!--Footer-->
+        <!--Credits and Copyright-->
+        <div class="footer-credits">
+            <p>Developed by Vedev Solutions</p>
+            <p>Copyright 2021</p>
+            <a href="https://www.freepik.com/vectors/background">Background vector created by rawpixel.com - www.freepik.com</a>
+            <a href="#" class="footer-info">
+                <h5>Privacy Policy</h5>
+            </a>
+        </div>
 
+
+
+
+    </footer>
 </body>
-<footer>
-    <section>
-        <!--Hours-->
+<!--Footer-->
 
-    </section>
-    <section>
-        <!--Social Media-->
-
-    </section>
-</footer>
 
 </html>
