@@ -189,6 +189,7 @@ header {
     background-size: cover;
     height: max-content;
     margin: 0;
+    padding-bottom: 1.5rem;
 }
 
 .interior-landing-pic {
