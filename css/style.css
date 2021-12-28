@@ -627,7 +627,6 @@ header {
 }
 
 .contact-title {
-    margin-bottom: 3rem;
     color: var(--black);
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -639,6 +638,16 @@ header {
     margin-left: 4rem;
     margin-right: 4rem;
     margin-top: 0;
+}
+
+.contact-number {
+    color: var(--black);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-bottom: 3rem;
+    margin-top: 0.5rem;
 }
 
 .contact-form {
